@@ -2,12 +2,7 @@
   <div class="page-content">
     <div class="header-title">
       <div class="row">
-        <span class="text-category">Trend Categories</span>
-      </div>
-      <div class="row">
-        <router-link class="show-all" to="/category"
-          >Show all categories</router-link
-        >
+        <span class="text-category all-category-product">All Categories</span>
       </div>
     </div>
     <section class="store-trend-categories">
@@ -69,16 +64,49 @@
             <p class="categories-text">Baby</p>
           </a>
         </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img
+                src="../assets/images/categories_furnitures.svg"
+                class="w-100"
+              />
+            </div>
+            <p class="categories-text">Furniture</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img src="../assets/images/categories-makeup.svg" class="w-100" />
+            </div>
+            <p class="categories-text">Makeup</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img
+                src="../assets/images/categories-sneakers.svg"
+                class="w-100"
+              />
+            </div>
+            <p class="categories-text">Sneakers</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img src="../assets/images/categories-babyes.svg" class="w-100" />
+            </div>
+            <p class="categories-text">Baby</p>
+          </a>
+        </div>
       </div>
     </section>
     <section class="header-title">
       <div class="row">
-        <span class="text-category">New Products</span>
-      </div>
-      <div class="row">
-        <router-link class="show-all" to="/category"
-          >Show All New Products</router-link
-        >
+        <span class="text-category  all-category-product">Al Products</span>
       </div>
     </section>
     <section class="store-new-products">
@@ -191,3 +219,13 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    //hanya menampilkan carousel di path tertentu
+    carouselShow() {
+      return this.$route.path === "/category";
+    },
+  },
+};
+</script>
