@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #be2055 !important;
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    background-color: #20a6be !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
