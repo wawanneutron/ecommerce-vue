@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-fluid">
     <Navbar></Navbar>
+    <Carousel></Carousel>
     <router-view />
   </div>
 </template>
@@ -10,6 +11,7 @@ export default {
   name: "app",
   components: {
     Navbar: () => import("@/components/Navbar.vue"),
+    Carousel: () => import("@/components/home/Carousel.vue"),
   },
 };
 </script>

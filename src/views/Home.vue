@@ -1,25 +1,137 @@
 <template>
-  <div>
-    <b-carousel
-      id="carousel-fade"
-      style="text-shadow: 0px 0px 2px #000"
-      fade
-      indicators
-      img-width="1024"
-      img-height="480"
-    >
-      <b-carousel-slide
-        caption="First slide"
-        img-src="https://picsum.photos/1024/480/?image=10"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        caption="Second Slide"
-        img-src="https://picsum.photos/1024/480/?image=12"
-      ></b-carousel-slide>
-      <b-carousel-slide
-        caption="Third Slide"
-        img-src="https://picsum.photos/1024/480/?image=22"
-      ></b-carousel-slide>
-    </b-carousel>
+  <div class="page-content">
+    <div class="header-title">
+      <div class="row">
+        <span class="text-category">Trend Categories</span>
+      </div>
+      <div class="row">
+        <router-link class="show-all" to="/">Show all categories</router-link>
+      </div>
+    </div>
+    <section class="store-trend-categories">
+      <div class="row">
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img
+                src="../assets/images/categories-gedgets.svg"
+                class="w-100"
+              />
+            </div>
+            <p class="categories-text">Getgets</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img src="../assets/images/categories-tools.svg" class="w-100" />
+            </div>
+            <p class="categories-text">Tools</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img
+                src="../assets/images/categories_furnitures.svg"
+                class="w-100"
+              />
+            </div>
+            <p class="categories-text">Furniture</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img src="../assets/images/categories-makeup.svg" class="w-100" />
+            </div>
+            <p class="categories-text">Makeup</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img
+                src="../assets/images/categories-sneakers.svg"
+                class="w-100"
+              />
+            </div>
+            <p class="categories-text">Sneakers</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <a href="#" class="component-categories d-block">
+            <div class="categories-image">
+              <img src="../assets/images/categories-babyes.svg" class="w-100" />
+            </div>
+            <p class="categories-text">Baby</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="header-title">
+      <div class="row">
+        <span class="text-category">New Products</span>
+      </div>
+      <div class="row">
+        <router-link class="show-all" to="/">Show All New Products</router-link>
+      </div>
+    </section>
+    <section class="store-new-products">
+      <div class="row">
+        <div class="col-6 col-md-3 col-lg-3">
+          <router-link to="/details" class="component-product">
+            <div class="product-thumbnail">
+              <img src="../assets/images/image1.jpg" class=" w-100" alt="" />
+            </div>
+            <div class="product-text">
+              <p>Apple Watch 4</p>
+            </div>
+            <div class="product-price">
+              <p>$890</p>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <router-link to="/details" class="component-product">
+            <div class="product-thumbnail">
+              <img src="../assets/images/image2.jpg" class=" w-100" alt="" />
+            </div>
+            <div class="product-text">
+              <p>Nike Jordan</p>
+            </div>
+            <div class="product-price">
+              <p>$340</p>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <router-link to="/details" class="component-product">
+            <div class="product-thumbnail">
+              <img src="../assets/images/image3.jpg" class=" w-100" alt="" />
+            </div>
+            <div class="product-text">
+              <p>Chair Green</p>
+            </div>
+            <div class="product-price">
+              <p>$3440</p>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
+          <router-link to="/details" class="component-product">
+            <div class="product-thumbnail">
+              <img src="../assets/images/image4.jpg" class=" w-100" alt="" />
+            </div>
+            <div class="product-text">
+              <p>Collor Trendy</p>
+            </div>
+            <div class="product-price">
+              <p>$540</p>
+            </div>
+          </router-link>
+        </div>
+      </div>
+    </section>
   </div>
 </template>

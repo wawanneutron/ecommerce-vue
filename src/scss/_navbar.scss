@@ -1,5 +1,26 @@
 .navbar {
-  background-color: rgb(190, 32, 85) !important;
+  margin: 30px 0 30px 0;
+  padding: 0;
+  .navbar-nav {
+    .nav-link {
+      color: #0c0d36;
+      margin: 0 8px;
+    }
+    .active {
+      color: #ff7158 !important;
+    }
+    .btn-success {
+      width: 120px;
+      height: 45px;
+      font-size: 16px;
+      &:hover {
+        background: #fff;
+        color: #0c0d36;
+        border-width: 2px;
+        box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
