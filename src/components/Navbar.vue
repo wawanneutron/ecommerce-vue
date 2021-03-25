@@ -4,7 +4,7 @@
     :class="{ 'navbar-hidden': !showNavbar }"
   >
     <router-link class="navbar-brand" to="/">
-      <img src="../assets/images/logo.svg" alt="" />
+      <img src="/images/logo.svg" alt="" />
     </router-link>
     <button
       class="navbar-toggler"
@@ -39,7 +39,7 @@
       <ul class="navbar-nav nav-profile " v-if="!guest">
         <li class="nav-item dropdown">
           <img
-            src="../assets/images/user_pc.jpg"
+            src="/images/user_pc.jpg"
             alt="user"
             class="rounded-circle mr-2 profile-picture shadow"
             id="navbarDropdown"
@@ -60,10 +60,7 @@
         </li>
         <li class="nav-item">
           <router-link to="/cart" class="nav-link chart d-inline-block mt-2">
-            <img
-              src="../assets/images/shopping_empety.svg"
-              alt="chart empety"
-            />
+            <img src="/images/shopping_empety.svg" alt="chart empety" />
           </router-link>
         </li>
       </ul>

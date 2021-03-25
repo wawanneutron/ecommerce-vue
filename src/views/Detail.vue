@@ -15,18 +15,18 @@
       </div>
     </section>
     <section class="store-gallery">
-      <div class="row">
+      <div class="row justify-content-between">
         <div class="col-lg-8">
-          <main>
+          <transition name="slide-fade" mode="out-in">
             <img
               :src="photos[photoActive].url"
               :key="photos[photoActive].url"
               class="img-store w-100"
             />
-          </main>
+          </transition>
         </div>
-        <div class="col-lg-2">
-          <div class="row">
+        <div class="col-lg-3">
+          <div class="row justify-content-center">
             <div
               class="col-5 col-md-3 col-lg-12"
               v-for="(photo, index) in photos"
@@ -34,7 +34,7 @@
             >
               <main @click="changeActive(index)">
                 <img
-                  class="w-100"
+                  class="w-100 img-thumbnail"
                   :src="photo.url"
                   :class="{ active: index == photoActive }"
                 />
@@ -64,10 +64,6 @@ export default {
       {
         id: 3,
         url: "/images/pic_detail3.jpg",
-      },
-      {
-        id: 4,
-        url: "/images/pic_detail5.jpg",
       },
     ],
   }),

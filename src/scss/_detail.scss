@@ -1,0 +1,32 @@
+.store-gallery {
+  margin-top: 30px !important;
+  .img-store {
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .img-thumbnail {
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .img-thumbnail.active {
+    border: 2px solid palevioletred;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .store-gallery {
+    margin-top: 30px !important;
+    .img-store {
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .img-thumbnail {
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .img-thumbnail.active {
+      border: 2px solid palevioletred;
+    }
+  }
+}
