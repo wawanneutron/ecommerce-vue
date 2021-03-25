@@ -1,8 +1,10 @@
 <template>
-  <div class="page-content">
+  <div class="page-content mt-global">
     <div class="header-title">
       <div class="row">
-        <span class="text-category all-category-product">All Categories</span>
+        <span class="text-product-category all-category-product"
+          >All Categories</span
+        >
       </div>
     </div>
     <section class="store-trend-categories">
@@ -106,7 +108,9 @@
     </section>
     <section class="header-title">
       <div class="row">
-        <span class="text-category  all-category-product">Al Products</span>
+        <span class="text-product-category  all-category-product"
+          >Al Products</span
+        >
       </div>
     </section>
     <section class="store-new-products">
