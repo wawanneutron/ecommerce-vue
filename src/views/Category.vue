@@ -1,18 +1,19 @@
 <template>
   <div class="page-content mt-global">
-    <div class="header-title">
+    <section class="header-title" data-aos="fade-up">
       <div class="row">
         <span class="text-product-category all-category-product"
           >All Categories</span
         >
       </div>
-    </div>
+    </section>
     <section class="store-trend-categories">
       <div class="row">
         <div
           class="col-6 col-md-3 col-lg-2"
           v-for="(category, index) in categories"
           :key="index"
+          data-aos="fade-up"
         >
           <router-link to="/category" class="component-categories d-block">
             <div class="categories-image">
@@ -23,7 +24,7 @@
         </div>
       </div>
     </section>
-    <section class="header-title">
+    <section class="header-title" data-aos="fade-up">
       <div class="row">
         <span class="text-product-category  all-category-product"
           >Al Products</span
@@ -36,6 +37,7 @@
           class="col-6 col-md-3 col-lg-3 col-product"
           v-for="(product, index) in products"
           :key="index"
+          data-aos="fade-up"
         >
           <router-link to="/details" class="component-product">
             <div class="product-thumbnail">

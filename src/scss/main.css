@@ -135,13 +135,82 @@ body {
 .store-gallery .img-thumbnail {
   cursor: pointer;
   margin-bottom: 30px;
+  border-radius: 12px;
+  width: 300px !important;
 }
 
 .store-gallery .img-thumbnail.active {
   border: 2px solid palevioletred;
 }
 
-@media (max-width: 1199.98px) {
+.store-gallery .store-heading .product-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0c0d36;
+}
+
+.store-gallery .store-heading .subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  color: #979797;
+}
+
+.store-gallery .store-heading .b-rating {
+  border: none;
+  width: 30%;
+  padding: 10px 0;
+  margin-top: -10px;
+}
+
+.store-gallery .store-heading .price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: #ff7158;
+}
+
+.store-gallery .store-heading .btn-success {
+  width: 210px;
+  height: 45px;
+}
+
+.store-gallery .description {
+  margin-top: -230px;
+}
+
+.store-gallery .description .detail {
+  color: #03ac0e;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.store-gallery .description .text-descripsi {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.store-gallery .description .readmore-shadow {
+  background: -webkit-gradient(linear, right top, left top, color-stop(1.51%, #dfdfdf), color-stop(42.26%, rgba(255, 255, 255, 0.87)), color-stop(68.91%, rgba(255, 255, 255, 0.61)), color-stop(95.07%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(#dfdfdf), to(#2e2e2e));
+  background: linear-gradient(270deg, #dfdfdf 1.51%, rgba(255, 255, 255, 0.87) 42.26%, rgba(255, 255, 255, 0.61) 68.91%, rgba(255, 255, 255, 0) 95.07%), linear-gradient(0deg, #dfdfdf, #2e2e2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.store-gallery .description .readmore {
+  cursor: pointer;
+  color: #03ac0e;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.store-gallery .description .content-store {
+  margin-top: 40px;
+}
+
+@media (max-width: 1979.98px) {
   .store-gallery {
     margin-top: 30px !important;
   }
@@ -156,6 +225,22 @@ body {
   }
   .store-gallery .img-thumbnail.active {
     border: 2px solid palevioletred;
+  }
+  .store-gallery .store-heading {
+    height: 50vh;
+    margin-top: 20px;
+  }
+  .store-gallery .description .detail {
+    margin: 100px 0 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .store-gallery .description {
+    margin-top: -190px;
+  }
+  .store-gallery .description .detail {
+    margin: 100px 0 30px;
   }
 }
 
@@ -280,7 +365,7 @@ body {
 }
 
 .store-breadcrumbs .breadcrumb {
-  background-color: #eed5d9;
+  background-color: transparent;
   padding: 15px 5px;
 }
 

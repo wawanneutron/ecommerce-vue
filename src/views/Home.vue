@@ -39,12 +39,13 @@
           >
         </div>
       </section>
-      <section class="store-new-products" data-aos="fade-up">
+      <section class="store-new-products">
         <div class="row">
           <div
             class="col-6 col-md-3 col-lg-3 col-product"
             v-for="(product, index) in products"
             :key="index"
+            data-aos="fade-up"
           >
             <router-link to="/details" class="component-product">
               <div class="product-thumbnail">
