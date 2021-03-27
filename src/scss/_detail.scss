@@ -18,7 +18,7 @@
       font-weight: 500;
       font-size: 24px;
       line-height: 36px;
-      color: #0c0d36;
+      color: rgb(3, 172, 14);
     }
     .subtitle {
       font-size: 14px;
@@ -41,16 +41,26 @@
     .btn-success {
       width: 210px;
       height: 45px;
+      background-color: rgb(3, 172, 14);
     }
   }
   .description {
-    margin-top: -230px;
     .detail {
+      margin: 15px 0 30px;
       color: rgb(3, 172, 14);
       font-weight: 500;
       font-size: 18px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        width: 127px;
+        height: 9px;
+        background-color: rgba(245, 62, 123, 0.356) !important;
+      }
     }
-    .text-descripsi {
+    span.text-descripsi {
       line-height: 30px;
       font-size: 18px;
     }
@@ -76,6 +86,14 @@
     }
     .content-store {
       margin-top: 40px;
+      .nav-link {
+        margin-bottom: 20px;
+        color: rgb(3, 172, 14);
+      }
+      .nav-link.active {
+        border: none !important;
+        color: palevioletred !important;
+      }
     }
   }
 }
@@ -96,13 +114,10 @@
       border: 2px solid palevioletred;
     }
     .store-heading {
-      height: 50vh;
       margin-top: 20px;
     }
     .description {
-      .detail {
-        margin: 100px 0 30px;
-      }
+      margin: 20px 0 30px;
     }
   }
 }
@@ -110,10 +125,8 @@
 @media (max-width: 767.98px) {
   .store-gallery {
     .description {
-      margin-top: -190px;
-
       .detail {
-        margin: 100px 0 30px;
+        margin: 30px 0 30px;
       }
     }
   }

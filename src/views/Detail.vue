@@ -74,17 +74,20 @@
               {{ longText.slice(0, 200) }}
               <span class="readmore-shadow">{{ longText.slice(0, 35) }}</span>
             </span>
+
             <span
               v-if="readMoreActivited"
               v-html="longText"
               class="text-descripsi"
             ></span>
-            <a
+            <span
               class="readmore "
               v-if="!readMoreActivited"
               @click="readmoreActive"
-              >Lihat selengkapnya
-            </a>
+            >
+              Lihat selengkapnya
+            </span>
+
             <a class="readmore " v-else @click="shortText"
               >Lihat Lebih Sedikit</a
             >
