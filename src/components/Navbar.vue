@@ -59,8 +59,9 @@
           </div>
         </li>
         <li class="nav-item">
-          <router-link to="/cart" class="nav-link chart d-inline-block mt-2">
-            <img src="/images/shopping_empety.svg" alt="chart empety" />
+          <router-link to="/cart" class="nav-link chart  mt-2">
+            <img src="/images/shopping_cart.svg" />
+            <div class=" cart-badge">3</div>
           </router-link>
         </li>
       </ul>

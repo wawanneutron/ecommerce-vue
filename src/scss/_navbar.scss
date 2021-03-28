@@ -18,6 +18,17 @@
       }
       .chart {
         margin-top: 0 !important;
+        .cart-badge {
+          display: inline-block;
+          min-width: 2em;
+          padding: 0.4em;
+          border-radius: 50%;
+          font-size: 10px;
+          text-align: center;
+          background-color: #e0bf00;
+          color: palevioletred;
+          margin-left: -10px;
+        }
       }
     }
   }

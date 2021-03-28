@@ -45,54 +45,73 @@
     }
   }
   .description {
-    .detail {
-      margin: 15px 0 30px;
-      color: rgb(3, 172, 14);
-      font-weight: 500;
-      font-size: 18px;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 16px;
-        width: 127px;
-        height: 9px;
-        background-color: rgba(245, 62, 123, 0.356) !important;
-      }
-    }
-    span.text-descripsi {
-      line-height: 30px;
-      font-size: 18px;
-    }
-    .readmore-shadow {
-      background: linear-gradient(
-          270deg,
-          rgb(223, 223, 223) 1.51%,
-          rgba(255, 255, 255, 0.87) 42.26%,
-          rgba(255, 255, 255, 0.61) 68.91%,
-          rgba(255, 255, 255, 0) 95.07%
-        ),
-        linear-gradient(-0deg, #dfdfdf, #2e2e2e);
-
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .readmore {
-      cursor: pointer;
-      color: rgb(3, 172, 14);
-      margin-left: 10px;
-      font-size: 18px;
-      font-weight: 500;
-    }
     .content-store {
-      margin-top: 40px;
+      margin: 40px 0 50px;
       .nav-link {
         margin-bottom: 20px;
         color: rgb(3, 172, 14);
       }
-      .nav-link.active {
-        border: none !important;
-        color: palevioletred !important;
+      .nav-pills {
+        .nav-item {
+          a.nav-link {
+            padding: 0 40px 0 0px;
+          }
+          a.nav-link.active {
+            background-color: transparent;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 15px;
+              width: 90px;
+              height: 9px;
+              background-color: rgba(245, 62, 123, 0.301) !important;
+            }
+          }
+          .detail {
+            color: rgb(3, 172, 14);
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+          }
+        }
+      }
+      .tab-content {
+        span.text-descripsi {
+          line-height: 30px;
+          font-size: 18px;
+        }
+        table {
+          thead {
+            background-color: rgba(3, 172, 14, 0.692);
+          }
+          tbody {
+            &:hover {
+              background-color: rgba(3, 172, 14, 0.411) !important;
+            }
+          }
+        }
+      }
+
+      .readmore {
+        cursor: pointer;
+        color: rgb(3, 172, 14);
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 25px;
+          width: 120px;
+          margin-left: 3px;
+          height: 2px;
+          background-color: palevioletred;
+        }
       }
     }
   }
