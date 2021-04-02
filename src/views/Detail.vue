@@ -56,13 +56,14 @@
             ></b-form-rating>
           </div>
           <div class="col-lg-3">
-            <button
+            <router-link
+              to="/cart"
               class=" btn btn-success"
               v-b-popover.hover.topright="'tambahkan ke keranjang'"
               title="add to cart"
             >
               Add to Cart
-            </button>
+            </router-link>
           </div>
         </div>
       </section>
@@ -397,7 +398,7 @@
     </section>
     <section class=" page-content header-title" data-aos="fade-up">
       <div class="row">
-        <span class="text-product-category">Lainnya di toko ini</span>
+        <span class="text-product-header">Lainnya di toko ini</span>
       </div>
     </section>
     <Products></Products>

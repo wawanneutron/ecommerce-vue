@@ -2,7 +2,7 @@
   <div class="page-content mt-global">
     <section class="header-title" data-aos="fade-up">
       <div class="row">
-        <span class="text-product-category all-category-product"
+        <span class="text-product-header all-category-product"
           >All Categories</span
         >
       </div>
@@ -26,7 +26,7 @@
     </section>
     <section class="header-title" data-aos="fade-up">
       <div class="row">
-        <span class="text-product-category  all-category-product"
+        <span class="text-product-header  all-category-product"
           >Al Products</span
         >
       </div>

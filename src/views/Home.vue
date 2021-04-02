@@ -4,7 +4,7 @@
     <div class="page-content">
       <section class="header-title" data-aos="fade-up">
         <div class="row">
-          <span class="text-product-category">Trend Categories</span>
+          <span class="text-product-header">Trend Categories</span>
         </div>
         <div class="row">
           <router-link class="show-all" to="/category"
@@ -31,7 +31,7 @@
       </section>
       <section class="header-title" data-aos="fade-up">
         <div class="row">
-          <span class="text-product-category">New Products</span>
+          <span class="text-product-header">New Products</span>
         </div>
         <div class="row">
           <router-link class="show-all" to="/category"
