@@ -1,24 +1,36 @@
-.table-cart {
-  margin-top: 30px;
-  color: rgba(49, 53, 59, 0.96);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  .cart-image {
-    border-radius: 8px;
-    max-width: 200px;
-    min-width: 100px;
-  }
+.card {
+  padding: 20px 20px 50px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
+}
+.store-cart {
+  .table-cart {
+    margin-top: 30px;
+    color: rgba(49, 53, 59, 0.96);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    .cart-image {
+      border-radius: 8px;
+      max-width: 200px;
+      min-width: 100px;
+    }
 
-  .product-price-coret {
-    text-decoration: line-through;
-    color: crimson;
-  }
-  .btn-remove-cart {
-    background: #fd4771;
-    color: white;
-    &:hover {
-      background: #ff6589;
+    .product-price-coret {
+      text-decoration: line-through;
+      color: crimson;
+    }
+    .btn-remove-cart {
+      background: #fd4771;
+      color: white;
+      &:hover {
+        background: #ff6589;
+      }
     }
   }
+}
+
+.shipping-details {
+  // height: 100vh;
 }

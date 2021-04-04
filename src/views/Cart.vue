@@ -11,14 +11,14 @@
               <li class="breadcrumb-item  active">Cart</li>
             </ol>
           </nav>
-          <div class="text-product-header">
-            <i class="fa fa-shopping-cart mr-2"></i>
-            Order Details
-          </div>
         </div>
       </div>
     </section>
-    <section class="store-cart">
+    <section class="store-cart card card-body ">
+      <div class="text-product-header">
+        <i class="fa fa-shopping-cart mr-2"></i>
+        Order Details
+      </div>
       <div class="row " data-aos="fade-up">
         <div class="col-12 table-responsive">
           <table class="table table-borderless table-cart">
@@ -56,6 +56,130 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+      <div class="text-product-header mt-4">
+        <i class="fas fa-money-check-alt"></i>
+        Payment informations
+      </div>
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-4 col-lg-3">
+          <div class="title">Jumlah Pemesanan</div>
+          <div class="sub-title">9</div>
+        </div>
+
+        <div class="col-4 col-lg-3">
+          <div class="title">Ongkos Kirim</div>
+          <div class="gram">(1000) gram</div>
+          <div class="sub-title">120.000</div>
+        </div>
+        <div class="col-4 col-lg-3">
+          <div class="title">Subtotal</div>
+          <div class="sub-title">Rp. 567.000</div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <a href="#" class=" btn btn-block btn-success">Checkout Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="shipping-details card card-body mt-4">
+      <div class="text-product-header">
+        <i class="fas fa-shipping-fast mr-2"></i>
+        Shipping Details
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="form-grop">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              class=" form-control"
+              placeholder="your full name"
+              id="name"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class=" form-group">
+            <label for="mobile">Mobile/Whatsapp</label>
+            <input
+              type="text"
+              class=" form-control "
+              placeholder="0877584586"
+              id="mobile"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="provinces">Provinces</label>
+            <select name="provinces" class=" form-control" id="provinces">
+              <option selected>Banten</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="city">City / Districts</label>
+            <select name="city" class=" form-control" id="city">
+              <option selected>Kab. Tangerang</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="code">Postal Code</label>
+            <input
+              type="number"
+              class=" form-control"
+              id="code"
+              placeholder="15720"
+            />
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label for="address">Full Address</label>
+            <textarea
+              name="address"
+              class=" form-control"
+              id="address"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-courier">Courier Delivery</div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="jne"
+              id="jne"
+              value="jne"
+            />
+            <label class="form-check-label" for="jne">JNE</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tiki"
+              id="tiki"
+              value="tiki"
+            />
+            <label class="form-check-label" for="tiki">TIKI</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="pos"
+              id="pos"
+              value="pos"
+            />
+            <label class="form-check-label" for="pos">POS</label>
+          </div>
         </div>
       </div>
     </section>
