@@ -36,8 +36,8 @@ body {
           transform: translate3d(0, 0, 0);
   -webkit-transition: 0.5s all ease-out;
   transition: 0.5s all ease-out;
-  margin: 0px 85px;
-  padding: 30px 0 30px;
+  margin: 0px;
+  padding: 30px 85px 30px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -97,8 +97,7 @@ body {
 
 @media (max-width: 1199.98px) {
   .navbar {
-    margin: 0px 50px;
-    padding: 20px 0 20px;
+    padding: 20px 50px 20px;
   }
   .navbar .navbar-nav {
     -webkit-box-align: center !important;
@@ -113,8 +112,7 @@ body {
 
 @media (max-width: 767.98px) {
   .navbar {
-    margin: 0px 20px;
-    padding: 15px 0 15px;
+    padding: 15px 20px 15px;
   }
   .navbar .navbar-nav {
     -webkit-box-align: center;
@@ -126,8 +124,7 @@ body {
 
 @media (max-width: 575.98px) {
   .navbar {
-    margin: 0px 15px;
-    padding: 15px 0 15px;
+    padding: 15px 15px 15px;
   }
   .navbar .navbar-nav {
     -webkit-box-align: center;
@@ -302,9 +299,9 @@ body {
 .store-cart .table-cart {
   margin-top: 30px;
   color: rgba(49, 53, 59, 0.96);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .store-cart .table-cart .cart-image {
@@ -325,6 +322,16 @@ body {
 
 .store-cart .table-cart .btn-remove-cart:hover {
   background: #ff6589;
+}
+
+.store-cart .payment-informations {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.store-cart .payment-informations .number {
+  color: #03ac0e;
 }
 
 .img-carousel {

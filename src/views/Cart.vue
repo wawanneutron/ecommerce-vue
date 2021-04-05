@@ -62,20 +62,19 @@
         <i class="fas fa-money-check-alt"></i>
         Payment informations
       </div>
-      <div class="row mt-5" data-aos="fade-up">
-        <div class="col-4 col-lg-3">
-          <div class="title">Jumlah Pemesanan</div>
-          <div class="sub-title">9</div>
+      <div class="row payment-informations mt-5" data-aos="fade-up">
+        <div class="col-6 col-lg-3">
+          <div class="number">9</div>
+          <div class="sub-title">Jumlah Pemesanan</div>
         </div>
-
-        <div class="col-4 col-lg-3">
-          <div class="title">Ongkos Kirim</div>
+        <div class="col-6 col-lg-3">
           <div class="gram">(1000) gram</div>
-          <div class="sub-title">120.000</div>
+          <div class="number">Rp. 120.000</div>
+          <div class="sub-title">Ongkos Kirim</div>
         </div>
-        <div class="col-4 col-lg-3">
-          <div class="title">Subtotal</div>
-          <div class="sub-title">Rp. 567.000</div>
+        <div class="col-6 col-lg-3">
+          <div class="number">Rp. 567.000</div>
+          <div class="sub-title">Subtotal</div>
         </div>
         <div class="col-12 col-lg-3">
           <a href="#" class=" btn btn-block btn-success">Checkout Now</a>
