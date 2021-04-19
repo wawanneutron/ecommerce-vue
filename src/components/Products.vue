@@ -9,7 +9,7 @@
       >
         <router-link to="/details" class="component-product">
           <div class="product-thumbnail">
-            <img :src="product.url" class=" w-100" alt="" />
+            <img :src="product.url" class=" w-100" />
           </div>
           <div class="product-text">
             <p>{{ product.name }}</p>

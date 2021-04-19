@@ -16,18 +16,21 @@
       .profile-picture {
         width: 50px;
       }
-      .chart {
+      .cart {
         margin-top: 0 !important;
+        position: relative;
         .cart-badge {
+          position: absolute;
+          top: 0;
           display: inline-block;
           min-width: 2em;
-          padding: 0.4em;
+          padding: 0.2em;
           border-radius: 50%;
-          font-size: 10px;
+          font-size: 13px;
           text-align: center;
-          background-color: rgb(3, 172, 14);
-          color: rgb(255, 255, 255);
-          margin-left: -10px;
+          background-color: #29a867;
+          color: #ffffff;
+          margin-left: -12px;
         }
       }
     }
@@ -58,7 +61,6 @@
     padding: 20px 50px 20px;
     .navbar-nav {
       align-items: center !important;
-      line-height: 60px;
     }
 
     .btn-success {
@@ -71,8 +73,7 @@
   .navbar {
     padding: 15px 20px 15px;
     .navbar-nav {
-      align-items: center;
-      line-height: 60px;
+      align-items: center !important;
     }
   }
 }
@@ -80,9 +81,8 @@
 @media (max-width: 575.98px) {
   .navbar {
     padding: 15px 15px 15px;
-    .navbar-nav {
-      align-items: center;
-      line-height: 60px;
+    .nav-item {
+      align-items: center !important;
     }
   }
 }

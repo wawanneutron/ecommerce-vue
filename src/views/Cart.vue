@@ -14,7 +14,7 @@
         </div>
       </div>
     </section>
-    <section class="store-cart card card-body ">
+    <section class="store-cart card card-body shadow">
       <div class="text-product-header">
         <i class="fa fa-shopping-cart mr-2"></i>
         Order Details
@@ -58,18 +58,18 @@
           </table>
         </div>
       </div>
-      <div class="text-product-header mt-4">
+      <div class="text-product-header mt-4" data-aos="fade-up">
         <i class="fas fa-money-check-alt"></i>
         Payment informations
       </div>
-      <div class="row payment-informations mt-5" data-aos="fade-up">
-        <div class="col-6 col-lg-3">
-          <div class="number">9</div>
+      <div class="row payment-informations mt-5" data-aos="fade-in">
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="number">9 (pcs)</div>
           <div class="sub-title">Jumlah Pemesanan</div>
         </div>
         <div class="col-6 col-lg-3">
-          <div class="gram">(1000) gram</div>
           <div class="number">Rp. 120.000</div>
+          <div class="gram">(1000) gram</div>
           <div class="sub-title">Ongkos Kirim</div>
         </div>
         <div class="col-6 col-lg-3">
@@ -81,7 +81,10 @@
         </div>
       </div>
     </section>
-    <section class="shipping-details card card-body mt-4">
+    <section
+      class="shipping-details card card-body shadow mt-4"
+      data-aos="fade-in"
+    >
       <div class="text-product-header">
         <i class="fas fa-shipping-fast mr-2"></i>
         Shipping Details
@@ -92,7 +95,7 @@
             <label for="name">Full Name</label>
             <input
               type="text"
-              class=" form-control"
+              class=" form-control mb-4"
               placeholder="your full name"
               id="name"
             />
@@ -112,7 +115,7 @@
         <div class="col-md-4">
           <div class="form-group">
             <label for="provinces">Provinces</label>
-            <select name="provinces" class=" form-control" id="provinces">
+            <select name="provinces" class=" form-control mb-4" id="provinces">
               <option selected>Banten</option>
             </select>
           </div>
@@ -141,7 +144,7 @@
             <label for="address">Full Address</label>
             <textarea
               name="address"
-              class=" form-control"
+              class=" form-control mb-4"
               id="address"
               rows="5"
             ></textarea>
